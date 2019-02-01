@@ -12,6 +12,8 @@ export KINETIC_DATASTORE_URI="https://localhost/spacename/app/api/v1"
 export KINETIC_DATASTORE_USER=admin
 export KINETIC_DATASTORE_PASS=admin
 
+java -Dwarbler.port=4567 -Dwarbler.host=0.0.0.0 -jar ktsync.war
+
 curl http://localhost:4567/status
 
 curl http://localhost:4567/status/123
